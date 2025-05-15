@@ -1,0 +1,7 @@
+- name: configuring MySQL server
+  hosts: mysql
+  become: yes
+  # vars_files:
+  # - roles/mysql/vars/vault.yaml # To access the root password. we have to run like this $ ansible-playbook mysql.yaml --ask-vault-password
+  roles:
+  - mysql
